@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>More Likely - Host</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="wrap">
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <h1>More Likely - Host</h1>
+
+                    <div id="roomBox">
+                        <button id="createBtn">Create Room</button>
+                        <div id="roomInfo" style="display:none; margin-top:8px">
+                            <div>Room Code: <span id="roomCode" class="big"></span></div>
+                            <div class="footer">Players join at <b>player</b> and enter the code.</div>
+                        </div>
+                    </div>
+
+                    <h2 style="margin-top:18px;">Winning Score</h2>
+                    <input id="winScore" type="number" min="1" max="50" value="10" />
+
+                    <h2>Prompts (one per line)</h2>
+                    <textarea id="prompts" rows="8" placeholder="Who’s more likely to forget their password? Who’s more likely to sing karaoke first? Who’s more likely to become a millionaire?"></textarea>
+                    <button id="savePromptsBtn" disabled>Save Prompts</button>
+
+                    <h2>Lobby</h2>
+                    <div id="LobbyInfo" class="pill">Waiting for players...</div>
+                    <div id="players" class="players"></div>
+
+                    <h2>Round</h2>
+                    <div id="prompt" class="prompt">-</div>
+                    <div style="display:flex; gap:8px; margin-top:8px">
+                        <button id="startRoundBtn" disabled>Start Round</button>
+                        <button id="nextRoundBtn" disabled>Next Round</button>
+                    </div>
+
+                    <h2>Votes</h2>
+                    <div id="tally"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src=""></script>
+    <script src=""></script>
+</body>
+</html>
