@@ -6,8 +6,21 @@
     "start": "node server.js"
   },
   "dependencies": {
-    "express": "^4.19.2",
-    "nanoid": "^5.0.7",
-    "socket.io": "^4.7.5"
-  }
+    "express": "^4.21.2",
+    "nanoid": "^5.1.6",
+    "socket.io": "^4.8.1"
+  },
+  "description": "",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/miku-main/Who-is-more-likely-to.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/miku-main/Who-is-more-likely-to/issues"
+  },
+  "homepage": "https://github.com/miku-main/Who-is-more-likely-to#readme"
 }

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More Likely - Player</title>
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+    <div class="wrap narrow">
+        <div class="card" id="joinCard">
+            <h2>Join a Room</h2>
+            <input id="code" placeholder="Room Code (e.g., ABCD)" maxlength="6" />
+            <input id="name" placeholder="Your Name" maxlength="20" style="margin-top: 8px;" />
+            <button id="joinBtn">Join</button>
+            <div id="joinMsg" class="fotter center"></div>
+        </div>
+
+        <div class="card" id="gameCard" style="display: none;">
+            <div>Room <span id="roomCode" class="pill"></span></div>
+            <h2 id="hello">Welcome!</h2>
+            <div id="status" class="pill">Waiting...</div>
+
+            <div class="prompt" id="prompt">-</div>
+
+            <div id="options" class="grid"></div>
+            <div id="afterVote" class="footer center" style="display: none;">Vote received! Waiting for everyone...</div>
+        </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/js/player.js"></script>
+</body>
+</html>

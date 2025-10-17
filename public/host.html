@@ -17,7 +17,7 @@
                         <button id="createBtn">Create Room</button>
                         <div id="roomInfo" style="display:none; margin-top:8px">
                             <div>Room Code: <span id="roomCode" class="big"></span></div>
-                            <div class="footer">Players join at <b>player</b> and enter the code.</div>
+                            <div class="footer">Players join at <b>/player</b> and enter the code.</div>
                         </div>
                     </div>
 
@@ -29,7 +29,7 @@
                     <button id="savePromptsBtn" disabled>Save Prompts</button>
 
                     <h2>Lobby</h2>
-                    <div id="LobbyInfo" class="pill">Waiting for players...</div>
+                    <div id="lobbyInfo" class="pill">Waiting for players...</div>
                     <div id="players" class="players"></div>
 
                     <h2>Round</h2>
@@ -46,7 +46,7 @@
         </div>
     </div>
 
-    <script src=""></script>
-    <script src=""></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/js/host.js"></script>
 </body>
 </html>
